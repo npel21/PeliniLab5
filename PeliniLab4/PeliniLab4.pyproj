@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>84c7d0d3-155e-4c34-8674-53c7461e8f6b</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>PeliniLab4.py</StartupFile>
+    <StartupFile>4_1.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,7 +22,13 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="PeliniLab4.py" />
+    <Compile Include="4_1.py" />
+    <Compile Include="4_2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="4_3.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
