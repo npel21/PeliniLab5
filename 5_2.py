@@ -30,9 +30,10 @@ class MyDbgHook(DBG_Hooks):
     def dbg_library_load(self, pid, tid, ea, name, base, size):
         print "Library loaded: pid=%d tid=%d name=%s base=%x" % (pid, tid, name, base)
 
+    # Change CRACKME2 functionality
     def dbg_bpt(self, tid, ea):
         print "Breakpoint: 0x%x pid=%d" % (ea, tid)
-        # Entered password
+        # Print out entered password
         if ea == 0x00401370:
             esi = GetRegValue("esi")
             print "Password was %X\n" % (Dword(esi))
